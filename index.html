@@ -1,1017 +1,905 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Belt App</title>
-  <meta name="author" content="Belt">
-  <meta name="description" content="Belt App">
-  <meta name="keywords" content="keywords,here">
-
-<link rel="shortcut icon" href="http://fs1.directupload.net/images/171121/373hdtyr.png" type="image/png" />
-<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
- </head>
-  <body>
-
-
-<style>
-*{
-  margin: 0 auto;
-  font-family: 'Lato', sans-serif;
-}
-.navigation{
-width: 100%;
-height: 60px;
-color:#D7D7D7;
-}
-.logo{
-  width:200px;
-  height: 50px;
-  float: left;
-  background-image: url('http://fs1.directupload.net/images/171121/3kgmxzz2.png');
-  margin-top: 12px;
-  margin-left: 42px;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <title>Belt Technologies</title>
+  <meta content="Belt" name="author">
+  <meta content="Belt App" name="description">
+  <meta content="keywords,here" name="keywords">
+  <link href="http://fs1.directupload.net/images/171121/373hdtyr.png" rel="shortcut icon" type="image/png">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+</head>
+<body>
+  <style>
+   *{
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+   }
+   .navigation{
+   width: 100%;
+   height: 60px;
+   color:#D7D7D7;
+   }
+   .logo{
+    /*width:55px;*/
+    /*height:50px;*/
+    float: left;
+    font-family: "Bodoni 72";
+    font-size: 36px;
+    font-weight: bold;
+    color: #3A434F;
+    /*background-image: url('http://fs1.directupload.net/images/171121/3kgmxzz2.png');*/
+    /*background-image: url("logo.png");*/
+    margin-top: 12px;
+    margin-left: 42px;
+   }
+   ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      float: right;
+    margin-top:30px;
+    margin-right: 42px
+   }
+   li{
+    display: inline;
+    padding-left: 12px;
+    padding-right:12px;
+   }
+   ul a{
+   text-align: center;
+    cursor: pointer;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+   }
+   ul a:hover{
+    color:#636363;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+   }
+   .first-section p{
+    font-size: 59px;
+    color: #636363;
+    font-weight: 900;
+    margin-top: 293px;
+    margin-left: 8vw;
+   }
+   .first-section span{
+    color:#ADADAD;
+   }
+   .batch-apple{
+    cursor: pointer;
+    width: 211.5px;
+    height: 57.6px;
+    float: left;
+    margin-left: 8vw;
+    margin-top: 40px;
+    background-image: url('http://fs5.directupload.net/images/171102/24xtjwdy.png');
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: .1s;
+   }
+   .batch-android{
+    cursor: pointer;
+    width: 189.9px;
+    height: 57.6px;
+    float: left;
+    margin-left: 2.2vw;
+    margin-top: 40px;
+    background-image: url('http://fs5.directupload.net/images/171102/v64cjdt4.png');
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: .28s;
+   }
+   .cover{
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+   }
+   .first-section-image{
+    background-image: url('http://fs1.directupload.net/images/171207/fk2gubpi.png');
+    width: 700px;
+    height:900px;
     float: right;
-  margin-top:30px;
-  margin-right: 42px
-}
-li{
-  display: inline;
-  padding-left: 12px;
-  padding-right:12px;
-}
-ul a{
- text-align: center;
-  cursor: pointer;
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-ul a:hover{
-  color:#636363;
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-.first-section p{
-  font-size: 59px;
-  color: #636363;
-  font-weight: 900;
-  margin-top: 293px;
-  margin-left: 8vw;
-}
-.first-section span{
-  color:#ADADAD;
-}
-.batch-apple{
-  cursor: pointer;
-  width: 211.5px;
-  height: 57.6px;
-  float: left;
-  margin-left: 8vw;
-  margin-top: 40px;
-  background-image: url('http://fs5.directupload.net/images/171102/24xtjwdy.png');
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: .1s;
-}
-.batch-android{
-  cursor: pointer;
-  width: 189.9px;
-  height: 57.6px;
-  float: left;
-  margin-left: 2.2vw;
-  margin-top: 40px;
-  background-image: url('http://fs5.directupload.net/images/171102/v64cjdt4.png');
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: .28s;
-}
-.cover{
-  -webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-.first-section-image{
-  background-image: url('http://fs1.directupload.net/images/171207/fk2gubpi.png');
-  width: 700px;
-  height:900px;
-  float: right;
-}
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 3.2%, 0);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-@keyframes fadeInUp1 {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 20px, 0);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-.fadeInUp1 {
-  animation-name: fadeInUp1;
-}
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translate3d(4%, 0, 0);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-.filler{
-height:500px;
-}
-li a{
-  text-decoration: none;
-  color: #D7D7D7;
-  z-index: 333;
-}
-</style>
-
-  <div class="navigation ">
-    <div class="logo cover "></div>
-
-
+   }
+   @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 3.2%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+   }
+   @keyframes fadeInUp1 {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 20px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+   }
+   .fadeInUp1 {
+    animation-name: fadeInUp1;
+   }
+   @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translate3d(4%, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+   }
+   .filler{
+   height:500px;
+   }
+   li a{
+    text-decoration: none;
+    color: #D7D7D7;
+    z-index: 333;
+   }
+  </style>
+  <div class="navigation">
+    <div class="logo cover">Belt</div>
     <ul>
-      <li> <a href="https://pagedemo.us13.list-manage.com/subscribe?u=896723690d5643c18b699bcda&id=2f7624c71d">Product</a></li>
-      <li><a href="https://pagedemo.us13.list-manage.com/subscribe?u=896723690d5643c18b699bcda&id=2f7624c71d">Download</a></li>
-      <li><a href="../Team.html">Team</a></li>
-      <li><a href="https://pagedemo.us13.list-manage.com/subscribe?u=896723690d5643c18b699bcda&id=2f7624c71d">Contact</a></li>
+      <li>
+        <a href="http://eepurl.com/c_1Sc1" target="_blank">Product</a>
+      </li>
+      <li>
+        <a href="http://eepurl.com/c_1Sc1" target="_blank">Download</a>
+      </li>
+      <li>
+        <a href="../Team.html">Team</a>
+      </li>
+      <li>
+        <a href="http://eepurl.com/c_1Sc1" target="_blank">Contact</a>
+      </li>
     </ul>
   </div>
-  <div class="first-section-image cover animated fadeInRight">
+  <div class="first-section-image cover animated fadeInRight"></div>
+  <div class="first-section animated fadeInUp">
+    <p>Seamless Micro<br>
+    Investments <span>Into Cryptoassets</span></p><a href="http://eepurl.com/c_1Sc1" target="_blank">
+    <div class="batch-apple cover animated fadeInUp1"></div>
+    <div class="batch-android cover animated fadeInUp1"></div></a>
+    <div class="filler"></div>
   </div>
-
-<div class="first-section animated fadeInUp ">
-
-
-
-
-<p>
-
-Seamless Micro<br>Investments  <span>  Into Cryptoassets </span>
-</p>
-
-<a href="https://pagedemo.us13.list-manage.com/subscribe?u=896723690d5643c18b699bcda&id=2f7624c71d">
-<div class="batch-apple cover animated fadeInUp1 ">
-</div>
-<div class="batch-android cover animated fadeInUp1 ">
-</div>
-</a>
-
-<div class="filler">
-</div>
-
-
-</div>
-
-
-<style>
-.investing-section{
-  height: 423px;
-  margin-bottom: 124px;
-  background-image: url('http://fs1.directupload.net/images/171207/8mf7ufo7.png');
-}
-.investing-box{
-  top: 43px;
-  position: relative;
-    background: #fff;
-    width: 700px;
-    height: 300px;
-    border-radius: 4px;
-  background-image: url('http://fs5.directupload.net/images/171207/tpqhwbld.png');
-
-    -webkit-box-shadow: 0px 3px 68px -6px rgba(231,166,26,.2341);
-    -moz-box-shadow: 0px 3px 68px -6px rgba(231,166,26,.2341);
-    box-shadow: 0px 3px 68px -6px rgba(231,166,26,.2341);
-}
-.investing-box p{
-  font-size: 24px;
-  color: #ADADAD;
-  font-weight: 900;
-position: relative;
-left: 42px;
-top:22px;
-}
-.pulsate-css {
-  left: 333px;
-top: 43px;
-    animation: pulsate 2s ease-out;
-    animation-iteration-count: infinite;
-    opacity: 0.0;
-    /* you dont need the stuff below, but its what I used to create the loading circle */
-    border: 5px solid #398DD0;
-    border-radius: 30px;
-    height: 18px;
-    width: 18px;
+  <style>
+   .investing-section{
+    height: 423px;
+    margin-bottom: 124px;
+    background-image: url('http://fs1.directupload.net/images/171207/8mf7ufo7.png');
+   }
+   .investing-box{
+    top: 43px;
     position: relative;
-    display: inline-block;
-    margin-top: 20px;
-    text-align: center;
-}
-.pulstwo{
-  left: 433px;
-top: 58px;
-}
-@-webkit-keyframes pulsate {
-    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
-    50% {opacity: 1.0;}
-    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
-}
-</style>
+      background: #fff;
+      width: 700px;
+      height: 300px;
+      border-radius: 4px;
+    background-image: url('http://fs5.directupload.net/images/171207/tpqhwbld.png');
 
-<div class="investing-section">
-
-  <div class="investing-box ">
-    <p>
-      We apply sentiment  <br /> analysis to the <br /> cryptocurrency space
-
-      <br /> to provide comprised
-      <br /> information and a score
-    </p>
-    <div class="pulsate-css"></div>
-    <div class="pulsate-css pulstwo kill"></div>
-
+      -webkit-box-shadow: 0px 3px 68px -6px rgba(231,166,26,.2341);
+      -moz-box-shadow: 0px 3px 68px -6px rgba(231,166,26,.2341);
+      box-shadow: 0px 3px 68px -6px rgba(231,166,26,.2341);
+   }
+   .investing-box p{
+    font-size: 24px;
+    color: #ADADAD;
+    font-weight: 900;
+   position: relative;
+   left: 42px;
+   top:22px;
+   }
+   .pulsate-css {
+    left: 333px;
+   top: 43px;
+      animation: pulsate 2s ease-out;
+      animation-iteration-count: infinite;
+      opacity: 0.0;
+      /* you dont need the stuff below, but its what I used to create the loading circle */
+      border: 5px solid #398DD0;
+      border-radius: 30px;
+      height: 18px;
+      width: 18px;
+      position: relative;
+      display: inline-block;
+      margin-top: 20px;
+      text-align: center;
+   }
+   .pulstwo{
+    left: 433px;
+   top: 58px;
+   }
+   @-webkit-keyframes pulsate {
+      0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+      50% {opacity: 1.0;}
+      100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+   }
+  </style>
+  <div class="investing-section">
+    <div class="investing-box">
+      <p>We apply sentiment<br>
+      analysis to the<br>
+      cryptocurrency space<br>
+      in order to provide you<br>
+      with a metascore of each coin</p>
+      <div class="pulsate-css"></div>
+      <div class="pulsate-css pulstwo kill"></div>
+    </div>
   </div>
-
-</div>
-
-
-
-<style>
-.section-two{
-  background: green;
-  height: 100%;
-}
-.section-left,.section-right{
-  float: left;
-  width: 50%;
-    min-height:700px;
-}
-.section-left-image{
-  width: 340px;
-  height: 620px;
-  background-image: url('http://fs5.directupload.net/images/171107/w6w6mytx.png');
-}
-.section-three-left-image{
-  background-image: url('http://fs5.directupload.net/images/171207/4v4c83kj.png');
-}
-.section-right p{
-      font-size: 60px;
-      color: #636363;
-      font-weight: 900;
-      margin-top: 161px;
+  <style>
+   .section-two{
+    background: green;
+    height: 100%;
+   }
+   .section-left,.section-right{
+    float: left;
+    width: 50%;
+      min-height:700px;
+   }
+   .section-left-image{
+    width: 340px;
+    height: 620px;
+    background-image: url('http://fs5.directupload.net/images/171107/w6w6mytx.png');
+   }
+   .section-three-left-image{
+    background-image: url('http://fs5.directupload.net/images/171207/4v4c83kj.png');
+   }
+   .section-right p{
+        font-size: 60px;
+        color: #636363;
+        font-weight: 900;
+        margin-top: 161px;
+        margin-left: 4vw;
+   }
+   .section-right span{
+        font-size: 19px;
+        color: #636363;
+        font-weight: 300;
+        text-align: left;
+        line-height: 33px;
+   }
+   .section-two-description {
       margin-left: 4vw;
-}
-.section-right span{
-      font-size: 19px;
-      color: #636363;
-      font-weight: 300;
-      text-align: left;
-      line-height: 33px;
-}
-.section-two-description {
-    margin-left: 4vw;
-    width: 430px;
-    padding-top: 33px;
-}
-.section-three p{
-  margin-left: 0vw;
-}
-.section-three-description {
-    width: 430px;
-    padding-top: 33px;
+      width: 430px;
+      padding-top: 33px;
+   }
+   .section-three p{
+    margin-left: 0vw;
+   }
+   .section-three-description {
+      width: 430px;
+      padding-top: 33px;
+        margin-left: 18vw;
+   }
+   .section-three p{
+        font-size: 60px;
+        color: #636363;
+        font-weight: 900;
+        margin-top: 141px;
       margin-left: 18vw;
-}
-.section-three p{
-      font-size: 60px;
-      color: #636363;
-      font-weight: 900;
-      margin-top: 141px;
-    margin-left: 18vw;
-}
-.section-left-image-movement,.section-left-image-movement-2{
-  width: 373px;
-  height: 155px;
-  top: 220px;
-  position: relative;
-background-image: url('http://fs5.directupload.net/images/171109/gycrbiqp.png');
--webkit-animation-duration: 1s;
-  -webkit-animation-delay: 1.2s;
-right: 10px;
-}
-.section-left-image-movement-2{
-  background-image: url('http://fs5.directupload.net/images/171109/k54qguwt.png');
-  width: 393px;
-  height: 135px;
-  width: 423px;
-    height: 133px;
-    right:39px;
-}
-.text-slide-from-right,.title-fader,.title-fader1,.logo-fader,.logo-fader1,.logo-fader2,.logo-fader3,.logo-fader4,.logo-fader5{
-  opacity: 0;
-}
-.scroller,.scroller1,.scroller2,.scroller3,.scroller4,.scroller5,.scroller6,.scroller7,.scroller8,.scroller9,.scroller10,.scroller11,.scroller12,.scroller13{
-  opacity: 0;
-}
-.opacity{
-  opacity:1;
-}
-@keyframes fadeInRight {
-  from {
+   }
+   .section-left-image-movement,.section-left-image-movement-2{
+    width: 373px;
+    height: 155px;
+    top: 220px;
+    position: relative;
+   background-image: url('http://fs5.directupload.net/images/171109/gycrbiqp.png');
+   -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1.2s;
+   right: 10px;
+   }
+   .section-left-image-movement-2{
+    background-image: url('http://fs5.directupload.net/images/171109/k54qguwt.png');
+    width: 393px;
+    height: 135px;
+    width: 423px;
+      height: 133px;
+      right:39px;
+   }
+   .text-slide-from-right,.title-fader,.title-fader1,.logo-fader,.logo-fader1,.logo-fader2,.logo-fader3,.logo-fader4,.logo-fader5{
     opacity: 0;
-    transform: translate3d(2%, 0, 0);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-@keyframes fadeInLeft {
-	0% {
-		opacity: 0;
-		transform: translateX(-10px);
-	}
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
-}
-@keyframes slideInUp {
-  from {
-    transform: translate3d(0, 10%, 0);
-    visibility: visible;
-  }
-  to {
-    transform: translate3d(0, 0, 0);
-  }
-}
-.slideInUp {
-  animation-name: slideInUp;
-}
-.fadeInUp {
-  animation-name: fadeInUp;
-}
-.fadeInUp1 {
-  animation-name: fadeInUp1;
-}
-.duration{
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: .1s;
-}
-.duration1{
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: .2s;
-}
-.duration2{
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: .3s;
-}
-.duration3{
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: .4s;
-}
-.duration4{
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: .5s;
-}
-.duration5{
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: .6s;
-}
-.duration6{
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: .7s;
-}
-.duration7{
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: .8s;
-}
-.duration8{
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: .9s;
-}
-.duration9{
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: 1s;
-}
-.duration10{
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: 1.1s;
-}
-</style>
-
-
-
-
-<script type="text/javascript">
-$(window).scroll(function(){
-if($(window).scrollTop() > 750){
-$('.text-slide-from-right').addClass('animated fadeInRight');
-} else {
-}
-});
-$(window).scroll(function(){
-if($(window).scrollTop() > 790){
-$('.scroller').addClass('animated bounceIn');
-} else {
-}
-});
-$(window).scroll(function(){
-if($(window).scrollTop() > 1800){
-$('.scroller1').addClass('animated slideInUp fadeIn opacity');
-} else {
-}
-});
-    </script>
-
-
-
-
-
-
-<div class="section-two">
-
+   }
+   .scroller,.scroller1,.scroller2,.scroller3,.scroller4,.scroller5,.scroller6,.scroller7,.scroller8,.scroller9,.scroller10,.scroller11,.scroller12,.scroller13{
+    opacity: 0;
+   }
+   .opacity{
+    opacity:1;
+   }
+   @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translate3d(2%, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+   }
+   @keyframes fadeInLeft {
+      0% {
+          opacity: 0;
+          transform: translateX(-10px);
+      }
+      100% {
+          opacity: 1;
+          transform: translateX(0);
+      }
+   }
+   @keyframes slideInUp {
+    from {
+      transform: translate3d(0, 10%, 0);
+      visibility: visible;
+    }
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+   }
+   .slideInUp {
+    animation-name: slideInUp;
+   }
+   .fadeInUp {
+    animation-name: fadeInUp;
+   }
+   .fadeInUp1 {
+    animation-name: fadeInUp1;
+   }
+   .duration{
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: .1s;
+   }
+   .duration1{
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: .2s;
+   }
+   .duration2{
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: .3s;
+   }
+   .duration3{
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: .4s;
+   }
+   .duration4{
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: .5s;
+   }
+   .duration5{
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: .6s;
+   }
+   .duration6{
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: .7s;
+   }
+   .duration7{
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: .8s;
+   }
+   .duration8{
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: .9s;
+   }
+   .duration9{
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+   }
+   .duration10{
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1.1s;
+   }
+  </style>
+  <script type="text/javascript">
+   $(window).scroll(function(){
+   if($(window).scrollTop() > 750){
+   $('.text-slide-from-right').addClass('animated fadeInRight');
+   } else {
+   }
+   });
+   $(window).scroll(function(){
+   if($(window).scrollTop() > 790){
+   $('.scroller').addClass('animated bounceIn');
+   } else {
+   }
+   });
+   $(window).scroll(function(){
+   if($(window).scrollTop() > 1800){
+   $('.scroller1').addClass('animated slideInUp fadeIn opacity');
+   } else {
+   }
+   });
+  </script>
+  <div class="section-two">
     <div class="section-left">
       <div class="section-left-image cover">
-        <div class="section-left-image-movement cover scroller animated">
-
-        </div>
+        <div class="section-left-image-movement cover scroller animated"></div>
       </div>
-
     </div>
-
     <div class="section-right text-slide-from-right">
-      <p>
-        Spend<br/>
-        to Save
-      </p>
+      <p>Spend<br>
+      to Save</p>
       <div class="section-two-description">
-        <span>
-          save and invest towards the future of economics and the internet! Cryptoassets are a financial utility and new asset class that will revolutionize the way we pay      </span>
+        <span>Save and invest towards the future of economics and the internet! Cryptoassets are a financial utility and new asset class that will revolutionize the way we pay.</span>
       </div>
-
     </div>
-
-</div>
-
-
-<div class="section-three">
-    <div class="section-right  ">
-      <p>
-        Invest<br/>
-by Spending
-      </p>
+  </div>
+  <div class="section-three">
+    <div class="section-right">
+      <p>Invest<br>
+      by Spending</p>
       <div class="section-three-description">
-        <span>
-          everytime you spend, a small amount (round-up, top-up, or percentage of your transactions) is invested towards a cryptoassets     </span>
+        <span>Everytime you spend, a small amount (round-up, top-up, or percentage of your transactions) is invested towards cryptoassets.</span>
       </div>
-
     </div>
     <div class="section-left">
       <div class="section-left-image cover section-three-left-image">
-        <div class="section-left-image-movement-2 cover scroller1 animated ">
-
-        </div>
+        <div class="section-left-image-movement-2 cover scroller1 animated"></div>
       </div>
-
     </div>
-
-
-</div>
-
-
-
-
-
-
-
-<style>
-.section-four p{
-  text-align: center;
-  margin-top:123px;
-      margin-left: 0vw;
-      font-size: 60px;
-    color: #636363;
-    font-weight: 900;
-}
-.section-four-description{
-  width: 600px;
-  margin-bottom: 80px;
-  margin-top: 33px;
-}
-.section-four-description p{
+  </div>
+  <style>
+   .section-four p{
     text-align: center;
-    line-height: 33px;
-    font-weight: 400;
-    font-size: 20px;
-    margin-top: 20px;
-}
-.image-section-four{
-  width: 1064px;
-  height: 403px;
-  background-image: url('http://fs1.directupload.net/images/171207/xrak2z7i.png');
-}
-.section-four-button{
-  width: 280px;
-  height: 50px;
-  background:black;
-  border-radius: 4px;
-}
-.section-four-button p{
-  color:#fff;
-  font-size: 19px;
-  line-height: 50px;
-  margin-top: 63px;
-}
-</style>
-
-
-<div class="section-four">
-
-  <p>
-      Grow your  <br />
-Index Cryptp-Portfolio
-  </p>
-
-  <div class="section-four-description">
-    <p>
-    Backed by top crypto-investors, we've curated 3 index portfolios that'll help you diversify your microinvestments
-    </p>
-  </div>
-
-    <div class="image-section-four cover">
+    margin-top:123px;
+        margin-left: 0vw;
+        font-size: 60px;
+      color: #636363;
+      font-weight: 900;
+   }
+   .section-four-description{
+    width: 600px;
+    margin-bottom: 80px;
+    margin-top: 33px;
+   }
+   .section-four-description p{
+      text-align: center;
+      line-height: 33px;
+      font-weight: 400;
+      font-size: 20px;
+      margin-top: 20px;
+   }
+   .image-section-four{
+    width: 1064px;
+    height: 403px;
+    background-image: url('http://fs1.directupload.net/images/171207/xrak2z7i.png');
+   }
+   .section-four-button{
+    width: 280px;
+    height: 50px;
+    background:black;
+    border-radius: 4px;
+   }
+   .section-four-button p{
+    color:#fff;
+    font-size: 19px;
+    line-height: 50px;
+    margin-top: 63px;
+   }
+  </style>
+  <div class="section-four">
+    <p>Grow your<br>
+    Crypto-Portfolio</p>
+    <div class="section-four-description">
+      <p>Choose from 3 high-performing cryptoassets - Bitcoin, Ether, and Litecoin; diversify your microinvestments.</p>
     </div>
+    <div class="image-section-four cover"></div><a href="http://eepurl.com/c_1Sc1" target="_blank">
     <div class="section-four-button">
-        <p>
-          Get Started Now
-        </p>
+      <p>Get Started Now</p>
+    </div></a>
+  </div>
+  <style>
+   .grid{
+    height: 110px;
+    display: flex;
+    width: 80%;
+   }
+   .section-five p{
+    text-align: center;
+    margin-top:123px;
+        margin-left: 0vw;
+        margin-bottom: 33px;
+        font-size: 60px;
+      color: #636363;
+      font-weight: 900;
+   }
+   .box{
+    height: 100px;
+    width: 207px;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+   }
+   .f-1{
+    background-image: url('http://fs1.directupload.net/images/171107/8rwi9hsq.png');
+   }
+   .f-2{
+    background-image: url('http://fs1.directupload.net/images/171107/yhpzwelg.png');
+   }
+   .f-3{
+    background-image: url('http://fs1.directupload.net/images/171107/nte96xpg.png');
+   }
+   .f-4{
+    background-image: url('http://fs1.directupload.net/images/171107/v29fwb7j.png');
+   }
+   .f-5{
+    background-image: url('http://fs5.directupload.net/images/171107/mqahqmz8.png');
+   }
+   .f-6{
+    background-image: url('http://fs5.directupload.net/images/171107/x6na74vl.png');
+   }
+   .f-7{
+    background-image: url('http://fs1.directupload.net/images/171107/78qzvdjg.png');
+   }
+   .f-8{
+    background-image: url('http://fs5.directupload.net/images/171107/nkn9bv9b.png');
+   }
+   .f-9{
+    background-image: url('http://fs5.directupload.net/images/171107/pb7xhyeu.png');
+   }
+   .f-10{
+    background-image: url('http://fs5.directupload.net/images/171107/4uqhaglr.png');
+   }
+   .f-11{
+    background-image: url('http://fs1.directupload.net/images/171107/o94x2rq3.png');
+   }
+  </style>
+  <script type="text/javascript">
+   $(window).scroll(function(){
+   if($(window).scrollTop() > 3300){
+   $('.scroller2').addClass('animated fadeInUp');
+   $('.scroller3').addClass('animated fadeInUp duration1');
+   $('.scroller4').addClass('animated fadeInUp duration2');
+   $('.scroller5').addClass('animated fadeInUp duration3');
+   $('.scroller6').addClass('animated fadeInUp duration4');
+   $('.scroller7').addClass('animated fadeInUp duration5');
+   $('.scroller8').addClass('animated fadeInUp duration6');
+   $('.scroller9').addClass('animated fadeInUp duration7');
+   $('.scroller10').addClass('animated fadeInUp duration8');
+   $('.scroller11').addClass('animated fadeInUp duration9');
+   $('.scroller12').addClass('animated fadeInUp duration10');
+   $('.scroller13').addClass('animated fadeInUp duration11');
+   } else {
+   }
+   });
+  </script>
+  <div class="section-five">
+    <p>We're constantly growing<br>
+    our partnerships!</p>
+    <div style="height:40px;"></div>
+    <div class="grid">
+      <div class=" cover box f-1 scroller2"></div>
+      <div class="box f-2 scroller3 cover"></div>
+      <div class="box f-3 scroller4 cover"></div>
+      <div class="box f-4 scroller5 cover"></div>
     </div>
-
-
-</div>
-
-
-<style>
-.grid{
-  height: 110px;
-  display: flex;
-  width: 80%;
-}
-.section-five p{
-  text-align: center;
-  margin-top:123px;
-      margin-left: 0vw;
-      margin-bottom: 33px;
-      font-size: 60px;
-    color: #636363;
+    <div class="grid">
+      <div class="box f-5 scroller6 cover"></div>
+      <div class="box f-6 scroller7 cover"></div>
+      <div class="box f-7 scroller8 cover"></div>
+      <div class="box f-8 scroller9 cover"></div>
+    </div>
+    <div class="grid">
+      <div class="box f-9 scroller10 cover"></div>
+      <div class="box f-10 scroller11 cover"></div>
+      <div class="box f-11 scroller12 cover"></div>
+      <div class="box f- scroller13 cover"></div>
+    </div>
+    <div style="height:90px;"></div>
+  </div>
+  <style>
+   .footer{
+    background:#F8F8F8;
+    height: 800px;
+   }
+   .footer-batches{
+    width:80%;
+    max-width: 750px;
+    height: 70px;
+   }
+   .footer-batches{
+    display: flex;
+   }
+   .batch{
+    width: 189px;
+    height: 60px;
+    background-image: url('http://fs5.directupload.net/images/171108/ifa96v69.png');
+    margin-top: 83px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+   }
+   .b-1{
+    background-image: url('http://fs5.directupload.net/images/171108/iibow8p2.png');
+    width: 210px;
+   }
+   .b-2{
+    background-image: url('http://fs5.directupload.net/images/171108/7s4qcsdf.png');
+    width: 201px;
+   }
+   .footer-left{
+   }
+   .footer ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      float: none;
+    margin-top:30px;
+    margin-right: 42px
+   }
+   .footer li{
+    display: block;
+    padding-left: 0px;
+   text-align: center;
+    padding-right:12px;
+    padding: 29px;
+    color: #98A1A8;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+   }
+   .footer li a:hover{
+   color:#636363;
+   }
+   .footer li span {
+    color:#398DD0;
     font-weight: 900;
-}
-.box{
-  height: 100px;
-  width: 207px;
-  -webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-.f-1{
-  background-image: url('http://fs1.directupload.net/images/171107/8rwi9hsq.png');
-}
-.f-2{
-  background-image: url('http://fs1.directupload.net/images/171107/yhpzwelg.png');
-}
-.f-3{
-  background-image: url('http://fs1.directupload.net/images/171107/nte96xpg.png');
-}
-.f-4{
-  background-image: url('http://fs1.directupload.net/images/171107/v29fwb7j.png');
-}
-.f-5{
-  background-image: url('http://fs5.directupload.net/images/171107/mqahqmz8.png');
-}
-.f-6{
-  background-image: url('http://fs5.directupload.net/images/171107/x6na74vl.png');
-}
-.f-7{
-  background-image: url('http://fs1.directupload.net/images/171107/78qzvdjg.png');
-}
-.f-8{
-  background-image: url('http://fs5.directupload.net/images/171107/nkn9bv9b.png');
-}
-.f-9{
-  background-image: url('http://fs5.directupload.net/images/171107/pb7xhyeu.png');
-}
-.f-10{
-  background-image: url('http://fs5.directupload.net/images/171107/4uqhaglr.png');
-}
-.f-11{
-  background-image: url('http://fs1.directupload.net/images/171107/o94x2rq3.png');
-}
-</style>
-
-
-<script type="text/javascript">
-$(window).scroll(function(){
-if($(window).scrollTop() > 3300){
-$('.scroller2').addClass('animated fadeInUp');
-$('.scroller3').addClass('animated fadeInUp duration1');
-$('.scroller4').addClass('animated fadeInUp duration2');
-$('.scroller5').addClass('animated fadeInUp duration3');
-$('.scroller6').addClass('animated fadeInUp duration4');
-$('.scroller7').addClass('animated fadeInUp duration5');
-$('.scroller8').addClass('animated fadeInUp duration6');
-$('.scroller9').addClass('animated fadeInUp duration7');
-$('.scroller10').addClass('animated fadeInUp duration8');
-$('.scroller11').addClass('animated fadeInUp duration9');
-$('.scroller12').addClass('animated fadeInUp duration10');
-$('.scroller13').addClass('animated fadeInUp duration11');
-} else {
-}
-});
-    </script>
-
-
-
-
-<div class="section-five">
-  <p>
-    We're constantly growing
-
-<br />
-our partnerships!
-
-   </p>
- <div style="height:40px;"></div>
-
-   <div class="grid">
-
-
-     <div class=" cover box f-1 scroller2"></div>
-     <div class="box f-2 scroller3 cover"></div>
-     <div class="box f-3 scroller4 cover"></div>
-     <div class="box f-4 scroller5 cover"></div>
-   </div>
-
-   <div class="grid">
-
-     <div class="box f-5 scroller6 cover"></div>
-     <div class="box f-6 scroller7 cover"></div>
-     <div class="box f-7 scroller8 cover"></div>
-     <div class="box f-8 scroller9 cover"></div>
-   </div>
-
-   <div class="grid">
-
-     <div class="box f-9 scroller10 cover"></div>
-     <div class="box f-10 scroller11 cover"></div>
-     <div class="box f-11 scroller12 cover"></div>
-     <div class="box f- scroller13 cover"></div>
-   </div>
-
-   <div style="height:90px;"></div>
-
-</div>
-
-<style>
-.footer{
-  background:#F8F8F8;
-  height: 800px;
-}
-.footer-batches{
-  width:80%;
-  max-width: 750px;
-  height: 70px;
-}
-.footer-batches{
-  display: flex;
-}
-.batch{
-  width: 189px;
-  height: 60px;
-  background-image: url('http://fs5.directupload.net/images/171108/ifa96v69.png');
-  margin-top: 83px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.b-1{
-  background-image: url('http://fs5.directupload.net/images/171108/iibow8p2.png');
-  width: 210px;
-}
-.b-2{
-  background-image: url('http://fs5.directupload.net/images/171108/7s4qcsdf.png');
-  width: 201px;
-}
-.footer-left{
-}
-.footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    float: none;
-  margin-top:30px;
-  margin-right: 42px
-}
-.footer li{
-  display: block;
-  padding-left: 0px;
-text-align: center;
-  padding-right:12px;
-  padding: 29px;
-  color: #98A1A8;
-  font-size: 17px;
-  font-weight: 600;
-  text-align: left;
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-.footer li a:hover{
-color:#636363;
-}
-.footer li span {
-  color:#398DD0;
-  font-weight: 900;
-}
-.footer-list{
-  display: flex;
-  margin:110px 14vw 33px 14vw;
-}
-</style>
-
-
-<div class="footer">
-
+   }
+   .footer-list{
+    display: flex;
+    margin:110px 14vw 33px 14vw;
+   }
+  </style>
+  <div class="footer">
     <div class="footer-batches">
-
-      <a href="https://pagedemo.us13.list-manage.com/subscribe?u=896723690d5643c18b699bcda&id=2f7624c71d">  <div class="batch cover"></div>      </a>
-      <a href="https://pagedemo.us13.list-manage.com/subscribe?u=896723690d5643c18b699bcda&id=2f7624c71d">  <div class="batch b-1 cover  "></div> </a>
-      <a href="https://pagedemo.us13.list-manage.com/subscribe?u=896723690d5643c18b699bcda&id=2f7624c71d">  <div class="batch b-2 cover kill"></div> </a>
-
+      <a href="http://eepurl.com/c_1Sc1" target="_blank">
+      <div class="batch cover"></div></a> <a href="http://eepurl.com/c_1Sc1" target="_blank">
+      <div class="batch b-1 cover"></div></a> <a href="http://eepurl.com/c_1Sc1" target="_blank">
+      <div class="batch b-2 cover kill"></div></a>
     </div>
-
-
-<div class="footer-list">
-  <div class="footer-left">
-    <ul>
-      <li><span>COMPANY</span></li>
-        <br />
-      <li> <a>Home</a></li>
-      <li><a>About us</a></li>
-      <li><a>Support</a></li>
-    </ul>
+    <div class="footer-list">
+      <div class="footer-left">
+        <ul>
+          <li><span>COMPANY</span></li>
+          <li style="list-style: none"><br></li>
+          <li>
+            <a>Home</a>
+          </li>
+          <li>
+            <a>About us</a>
+          </li>
+          <li>
+            <a>Support</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-left">
+        <ul>
+          <li><span>Social</span></li>
+          <li style="list-style: none"><br></li>
+          <li>
+            <a>Facebook</a>
+          </li>
+          <li>
+            <a>Twitter</a>
+          </li>
+          <li>
+            <a>Medium</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-left kill">
+        <ul>
+          <li><span>Blog</span></li>
+          <li style="list-style: none"><br></li>
+          <li>
+            <a>Articles</a>
+          </li>
+          <li>
+            <a>News</a>
+          </li>
+          <li>
+            <a>More</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-left kill">
+        <ul>
+          <li><span>Legal</span></li>
+          <li style="list-style: none"><br></li>
+          <li>
+            <a>Terms</a>
+          </li>
+          <li>
+            <a>Conditions</a>
+          </li>
+          <li>
+            <a>APIs</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <style>
+      .footer-abspann-left{
+        width: 60%;
+        height: 100px;
+        float: left;
+      }
+      .footer-abspann-left span{
+          font-weight: 300;
+          line-height: 21px;
+          font-size: 14px;
+        }
+      .position{
+        margin-left: 17vw;
+        color:#98A1A8;
+        margin-top: 12px;
+        margin-right: 32px;
+        text-align: justify;
+      }
+      .footer-abspann-right{
+        width: 40%;
+        height: 100px;
+        float: right;
+      }
+      .footer-abspann-right{
+      color:#98A1A8;
+      }
+      .footer-abspann-right i{
+      padding: 22px;
+      font-size: 39px;
+      }
+      .position-2{
+      margin-left: 82px;
+      }
+      .made-with-love{
+      margin-top:55px;
+      text-align: center;
+      color: #DEE0E2;
+      }
+      @media (max-width: 992px){
+      ul{
+      margin-right: inherit;
+      text-align: center;
+      float: inherit;
+      }
+      .section-left, .section-right{
+      width: 100%;
+        min-height: 200px;
+        margin-top:67px;
+      }
+      .section-right p,.section-right span{
+      text-align: center;
+      margin-left: inherit;
+      margin-top: 10px;
+      }
+      .section-five p,.section-four p,.section-right p{
+          font-size: 40px;
+      }
+      .section-three-description {
+      margin-left: inherit;
+      }
+      .section-four-description p{
+      font-size: 19px;
+      }
+      .section-two-description {
+      margin-left: inherit;
+      }
+      .image-section-four {
+        width: 100%;
+        height: 172px;
+      }
+      .kill{
+      display: none;
+      }
+      .investing-box{
+      width: 82%;
+      margin-bottom: 76px;
+      }
+      .section-four-description{
+        width: 100%;
+      }
+      .first-section p {
+        font-size: 38px;
+      }
+      .section-two-description,  .section-three-description {
+        width: 100%;
+      }
+      .logo{
+      float: inherit;
+      margin-left: inherit;
+      }
+      .first-section-image{
+      left: 233px;
+      margin-top: 49px;
+      height: 781px;
+      background-position-x: 252px;
+        }
+      .batch-apple{
+      width: 184.5px;
+      height: 49.6px;
+      }
+      .batch-android{
+      width: 169.9px;
+      height: 49.6px;
+      }
+      .footer-batches{
+      width: 100%;
+      }
+      .batch{
+      margin-top: 67px;
+      margin: 2px;
+        height: 47px;
+        width: 162px;
+      }
+      .filler{
+      height: 200px;
+      }
+      .grid{
+      height: 71px;
+      width: 97%;
+      }
+      .box{
+      height: 35px;
+      width: 177px;
+      }
+      .section-four-button p{
+      font-size: 19px;
+      line-height: 43px;
+      }
+      .section-four-button {
+        width: 248px;
+        height: 43px;
+      }
+      .footer-abspann-left{
+        width: 100%;
+      }
+      .footer-abspann-right{
+      width: 100%;
+      margin-top: 52px;
+      }
+      .footer{
+          height: 950px;
+      }
+      body{
+      overflow-x: hidden;
+      }
+      .b-1{
+      width: 173px;
+      }
+      .batch{
+      height: 50px;
+      }
+      }
+    </style>
+    <div class="footer-abspann-left">
+      <div class="position">
+        <span>Belt is an fintech app which allows you to seamlessly make microinvestments into investor-backed portfolios of cryptoassets. We beleive that cryptoassets and the blockchain technology represent not only the next evolutionary step of the internet but also capitalism overall.</span>
+      </div>
+    </div>
+    <div class="footer-abspann-right">
+      <div class="position-2">
+        <i aria-hidden="true" class="fa fa-facebook"></i> <i aria-hidden="true" class="fa fa-medium"></i> <i aria-hidden="true" class="fa fa-twitter"></i>
+      </div>
+    </div>
+    <div style="clear:both"></div>
+    <div class="made-with-love">
+      <span>Belt Technologies 2017. Made with in Munich.</span>
+    </div>
   </div>
-
-  <div class="footer-left">
-    <ul>
-      <li><span>Social</span></li>
-        <br />
-      <li> <a>Facebook</a></li>
-      <li><a>Twitter</a></li>
-      <li><a>Medium</a></li>
-    </ul>
-  </div>
-
-
-  <div class="footer-left kill">
-    <ul>
-      <li><span>Blog</span></li>
-        <br />
-      <li> <a>Articles</a></li>
-      <li><a>News</a></li>
-      <li><a>More</a></li>
-    </ul>
-  </div>
-
-
-  <div class="footer-left kill">
-    <ul>
-      <li><span>Legal</span></li>
-        <br />
-      <li> <a>Terms</a></li>
-      <li><a>Conditions</a></li>
-      <li><a>APIs</a></li>
-    </ul>
-  </div>
-
-
-
-</div>
-
-
-<style>
-  .footer-abspann-left{
-    width: 60%;
-    height: 100px;
-    float: left;
-  }
-.footer-abspann-left span{
-      font-weight: 300;
-      line-height: 21px;
-      font-size: 14px;
-    }
-.position{
-    margin-left: 17vw;
-    color:#98A1A8;
-    margin-top: 12px;
-    margin-right: 32px;
-    text-align: justify;
-  }
-  .footer-abspann-right{
-    width: 40%;
-    height: 100px;
-    float: right;
-  }
-.footer-abspann-right{
-  color:#98A1A8;
-}
-.footer-abspann-right i{
-  padding: 22px;
-  font-size: 39px;
-}
-.position-2{
-  margin-left: 82px;
-}
-.made-with-love{
-  margin-top:55px;
-  text-align: center;
-  color: #DEE0E2;
-}
-@media (max-width: 992px){
-ul{
-  margin-right: inherit;
-  text-align: center;
-  float: inherit;
-}
-.section-left, .section-right{
-  width: 100%;
-    min-height: 200px;
-    margin-top:67px;
-}
-.section-right p,.section-right span{
-  text-align: center;
-  margin-left: inherit;
-  margin-top: 10px;
-}
-.section-five p,.section-four p,.section-right p{
-      font-size: 40px;
-}
-.section-three-description {
-  margin-left: inherit;
-}
-.section-four-description p{
-  font-size: 19px;
-}
-.section-two-description {
-  margin-left: inherit;
-}
-.image-section-four {
-    width: 100%;
-    height: 172px;
-}
-.kill{
-  display: none;
-}
-.investing-box{
-  width: 82%;
-  margin-bottom: 76px;
-}
-.section-four-description{
-    width: 100%;
-}
-.first-section p {
-    font-size: 38px;
-  }
-.section-two-description,  .section-three-description {
-    width: 100%;
-  }
-.logo{
-  float: inherit;
-  margin-left: inherit;
-}
-.first-section-image{
-  left: 233px;
-  margin-top: 49px;
-  height: 781px;
-  background-position-x: 252px;
-    }
-.batch-apple{
-  width: 184.5px;
-  height: 49.6px;
-}
-.batch-android{
-  width: 169.9px;
-  height: 49.6px;
-}
-.footer-batches{
-width: 100%;
-}
-.batch{
-  margin-top: 67px;
-  margin: 2px;
-    height: 47px;
-    width: 162px;
-}
-.filler{
-  height: 200px;
-}
-.grid{
-  height: 71px;
-  width: 97%;
-}
-.box{
-  height: 35px;
-  width: 177px;
-}
-.section-four-button p{
-  font-size: 19px;
-  line-height: 43px;
-}
-.section-four-button {
-    width: 248px;
-    height: 43px;
-  }
-.footer-abspann-left{
-    width: 100%;
-}
-.footer-abspann-right{
-  width: 100%;
-  margin-top: 52px;
-}
-.footer{
-      height: 950px;
-}
-body{
-  overflow-x: hidden;
-}
-.b-1{
-  width: 173px;
-}
-.batch{
-  height: 50px;
-}
-}
-</style>
-
-
-<div class="footer-abspann-left">
-  <div class="position">
-    <span>
-      Belt is an fintech app which allows you to seamlessly make microinvestments into investor-backed portfolios of cryptoassets. We beleive that cryptoassets and the blockchain technology represent not only the next evolutionary step of the internet but also capitalism overall.
-    </span>
-  </div>
-
-</div>
-<div class="footer-abspann-right">
-  <div class="position-2">
-  <i class="fa fa-facebook" aria-hidden="true"></i>
-  <i class="fa fa-medium" aria-hidden="true"></i>
-  <i class="fa fa-twitter" aria-hidden="true"></i>
-  </div>
-</div>
-
-<div style="clear:both">
-
-</div>
-
-<div class="made-with-love">
-
-  <span>
-    Belt Technologies 2017. Made with in Munich.
-  </span>
-</div>
-
-</div>
-
-
-
-
-
-
-  </body>
+</body>
 </html>
