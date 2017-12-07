@@ -1,0 +1,133 @@
+@media (max-width: 1024px) {
+	.our_digital .content_wrap{padding:90px 50px;}
+}
+@media (max-width: 991px) {
+	h1{font-size: 34px; line-height: 42px;}
+	h2{font-size: 26px; line-height: 32px;}
+	h3{font-size: 20px; line-height: 24px;}
+	h4{font-size: 16px; line-height: 22px;}
+	p{font-size: 16px; line-height: 22px;}
+	.watson_app h1{font-size: 34px; line-height: 42px;margin-top:80px;}
+	.watson_app .app_store{margin-top:20px;}
+	.watson_app h1 span{font-size:26px;}
+	.health_care h1 {font-size: 34px;margin-top: 80px;}
+	.health_care h1 span{font-size:26px;}
+	.health_care h1 span img{max-height:32px;}
+	.health_care2 h1 {font-size: 34px;margin-top: 80px;}
+	.health_care2 h1 span{font-size:26px;}
+	.health_care2 h1 span img{max-height:32px;}
+	.watson_app2 h1 {font-size: 34px;margin-top: 80px;}
+	.watson_app2 h1 span{font-size:26px;}
+	.watson_app2 h1 span img{max-height:32px;}
+	.navbar-toggle{margin:7px 5px 0 0;padding: 6px 7px;}
+	.navbar-default {padding: 5px 0;}
+	.navbar-default .navbar-nav > li > a {line-height: 18px;}
+	.navbar-brand > img {max-height: 40px;margin-top: 0px;}
+	.navbar-nav {margin: 0;}
+	.nav > li:nth-child(5) {display:none;}
+	.btn_block{min-height: 44px;line-height: 44px; font-size:16px;}
+	.clearfix.mt80 {margin-top: 50px !important;}
+	.digital_app {padding: 30px 0;}
+	.digital_app h3 {margin-bottom: 30px;}
+	.we_creaft p {margin: 20px 0;}
+	.we_develop h2 {margin-top: 30px;}
+	.we_develop p {margin: 30px 0;}
+	.pl8_pers{padding-left:15px;}
+	.device_up {top: 0;}
+	.we_creaft .form-group {margin-bottom: 50px;}
+	.we_creaft .logo img {max-height: 55px;}
+	.lets_talk {padding: 50px 0 0;}
+	.lets_talk p {font-size: 18px;line-height: 30px;}
+	.footer{padding: 50px 0;}
+	.footer h3{font-size: 24px; line-height: 24px;padding: 10px 0;}
+	.textimonials h3{padding:0px;font-size: 22px;line-height: 34px;}
+	.textimonials h4{font-size:18px; margin-top:20px;}
+	.textimonials {padding: 0px 0 50px;}
+	.textimonials .pull-left {float: none !important;}
+	.medical_app{padding:40px 0;}
+	.medical_app .pl40{padding-left:15px;}
+	.medical_app .pr40{padding-right:15px;}
+	.medical_app .mt150 {margin-top: 50px !important;}
+	.medical_app p {margin: 20px 0 0;}
+	.medical_app ul {margin: 30px 0 0;}
+	.technology{padding:40px 0;}
+	.technology h2{margin: 0 0 50px;}
+	.textimonials .item blockquote img{float: none;max-height: 50px;margin: auto;display: table;}
+	.technology .mt150, .technology .mt100{margin-top: 0px !important;}
+	.technology img{max-height: 50px; margin:20px 0;}
+	.our_digital{padding: 40px 0;}
+	.our_digital .mt120 {margin-top:40px !important;}
+	.our_team {padding: 20px 0 0;}
+	.our_team .col-md-4 {padding: 0 15px;}
+	.our_team .btn_block {padding: 0 25px;}
+	.our_team h2{margin-top:20px;}
+	.our_team .mt120{margin-top:30px !important;}
+	.our_team .team_wrap {margin-bottom: 50px;}
+	.erfahre{padding:40px 0;}
+	.erfahre .fa_icon {margin: 30px 0 60px;}
+	.we_develop{background-size:50%;}
+}
+@media (max-width: 767px) {
+	.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse{background: #f5f5f5;margin: 10px -15px 0 -15px;padding: 0;overflow-x: hidden;}
+	.nav > li {border-bottom: solid 1px #ddd;}
+	.nav > li {text-align: center;}
+	.textimonials h4{text-align:center;}
+	.textimonials .pull-left {text-align: center;}
+	.digital_app h1 {text-align:center;
+		font-size: 55px;
+line-height: 68px;
+
+
+	}
+.we_creaft h2{
+	font-size: 28px;
+}
+
+	.digital_app h3 {text-align:center;}
+	.watson_app {padding: 0px 0 40px;}
+	.watson_app .mt150 {margin-top: 30px !important;}
+	.we_develop{padding:0px 0 400px;background-position: center bottom;}
+	.health_care h1 {text-align:center;margin-top: 20px;}
+	.watson_app2 .btn_block, .health_care .btn_block, .health_care2 .btn_block{margin: auto;display: table;}
+	.health_care {padding: 280px 0 180px;}
+	.health_care h1 span img{max-height:32px;}
+	.health_care2 h1 {text-align:center;margin-top: 20px;}
+	.health_care2 h1 span{font-size:26px;}
+	.health_care2 h1 span img{max-height:32px;}
+	.watson_app h1{margin-top:20px; text-align:center;}
+	.watson_app2 h1 {margin-top: 20px;text-align:center;}
+	.we_creaft p {margin: 20px 0;}
+	.we_develop h2 {text-align: center;}
+	.we_develop p {text-align: center;}
+	.lets_talk h2 {text-align: center;}
+	.lets_talk p {text-align: center;}
+	.footer h3{text-align:center;}
+	.textimonials .item blockquote img{text-align:center;}
+	.textimonials .client_wrap {float: none;text-align: center;}
+	.watson_app .col-md-6, .watson_app .col-md-5 {text-align: center;}
+	.medical_app .col-md-12, .medical_app .col-md-7, .medical_app .col-md-6, .medical_app .col-md-5, .medical_app .col-md-4 {text-align: center;}
+	.technology .col-md-4 {text-align: center;}
+	.technology .col-md-12{text-align: center;}
+	.footer ul li{text-align:center;}
+	.footer p {text-align:center;}
+	.our_digital .content_wrap{min-height:auto;padding: 50px;}
+	.our_team .team_wrap{text-align:center;}
+	.our_team h2{text-align:center;}
+	.our_team h3 {margin: 20px 0 20px;}
+	.erfahre h2{text-align:center;}
+	.erfahre p{text-align:center;}
+}
+@media (max-width: 568px) {
+	.we_develop{padding:0px 0 350px;}
+}
+@media (max-width: 480px) {
+	.we_develop{padding:0px 0 300px;}
+}
+@media (max-width: 414px) {
+	.technology img{max-height: 35px;}
+	.health_care{background-size: 70%;padding: 20px 0 350px;}
+	.we_develop{padding:0px 0 240px;}
+}
+@media (max-width: 360px) {
+	.we_develop{background-size: 60%;}
+}
